@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biometricgatesecurity.HouseLandingController">
+    <stylesheets>
+        <URL value="@houselanding.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="230.0" layoutY="104.0" prefHeight="40.0" prefWidth="139.0" text="HOUSES">
+         <font>
+            <Font name="Algerian" size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="65.0" layoutY="157.0" prefHeight="100.0" prefWidth="470.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#registerHouse" prefHeight="46.0" prefWidth="124.0" text="ADD" textAlignment="RIGHT" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="edit" mnemonicParsing="false" onAction="#changeHouse" prefHeight="46.0" prefWidth="124.0" text="EDIT" textAlignment="RIGHT" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#changeHouse" prefHeight="62.0" prefWidth="159.0" text="DELETE" textAlignment="RIGHT" wrapText="true">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" top="20.0" />
+         </padding>
+      </HBox>
+      <Button layoutX="14.0" layoutY="31.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="113.0" text="BACK">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

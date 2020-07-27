@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="379.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biometricgatesecurity.HomePageController">
+   <children>
+      <Label layoutX="185.0" layoutY="69.0" prefHeight="63.0" prefWidth="231.0" text="BIOMETRIC GATE SECURITY SYSTEM" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="191.0" layoutY="146.0" mnemonicParsing="false" onAction="#loadAdmin" prefHeight="45.0" prefWidth="219.0" text="ADMINISTRATOR">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="211.0" layoutY="206.0" mnemonicParsing="false" onAction="#resident" prefHeight="45.0" prefWidth="179.0" text="RESIDENT">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/resident.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="21.0" layoutY="24.0" mnemonicParsing="false" onAction="#exit" prefHeight="34.0" prefWidth="110.0" text="EXIT">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="211.0" layoutY="270.0" mnemonicParsing="false" onAction="#visitorModule" prefHeight="41.0" prefWidth="179.0" text="VISITOR">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/visitor.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" layoutX="191.0" layoutY="325.0" mnemonicParsing="false" onAction="#loadAdmin" prefHeight="45.0" prefWidth="219.0" text="SECURITY GUARD">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/security%20guard.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="25.0" left="50.0" right="50.0" top="25.0" />
+   </padding>
+</AnchorPane>
